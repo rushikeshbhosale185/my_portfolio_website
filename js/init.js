@@ -518,7 +518,7 @@ function arlo_tm_animate_text() {
   var animateSpan = jQuery(".arlo_tm_animation_text_word");
 
   animateSpan.typed({
-    strings: ["Flutter Developer", "Backend Developer", "FreeLancer"],
+    strings: ["Computer Science Engineer", "Backend Developer", "FreeLancer"],
     loop: true,
     startDelay: 1e3,
     backDelay: 2e3,
@@ -759,4 +759,3 @@ function arlo_tm_hamburger() {
     return false;
   });
 }
-	
