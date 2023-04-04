@@ -2602,3 +2602,84 @@ img.svg{
 	.arlo_tm_projects_list > li{width: 100%;padding-left: 0px;}
 	.arlo_tm_counter_wrap{padding: 94px 0px 48px 0px;}
 }	
+
+.gallery {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-width: 33%;
+	-moz-column-width: 33%;
+	column-width: 33%;
+  }
+  
+  .gallery .pics {
+	-webkit-transition: all 350ms ease;
+	transition: all 350ms ease;
+  }
+  
+  .gallery .animation {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+  }
+  
+  @media (max-width: 450px) {
+	.gallery {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  column-count: 1;
+	  -webkit-column-width: 100%;
+	  -moz-column-width: 100%;
+	  column-width: 100%;
+	}
+  }
+  
+  @media (max-width: 400px) {
+	.btn.filter {
+	  padding-left: 1.1rem;
+	  padding-right: 1.1rem;
+	}
+  }
+
+  /* Carousel dark indicators */
+/* Add an extra .carousel parent class to increase specifity
+   avoiding the use of !important flag. */
+.carousel .carousel-indicators li {
+	background-color: #fff;
+	background-color: rgba(70,70,70,.25);
+  }
+  
+  .carousel .carousel-indicators .active {
+	background-color: #444;
+  }
+  
+  /* Only for beautify example */
+  h1 {
+	margin: 60px auto;
+	text-align: center;
+  }
+  
+  img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }
+
+  .blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
